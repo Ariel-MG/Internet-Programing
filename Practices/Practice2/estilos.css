@@ -1,0 +1,98 @@
+
+/* PALETA DE COLORES */
+
+/*
+Azul Claro: #E3F0F9
+Cafe Claro: #BD8F4B
+Anaranjado: #FAA016
+Azul: #467CA5
+Gris: #80796F
+*/
+
+/* ------------------- BODY ------------------- */
+body {
+  font-family: Arial, sans-serif; /* Cambia el tipo de letra */
+  margin: 0;
+  padding: 0px;
+  background-color: #D9D9D9; /* Un gris muy claro de fondo */
+}
+
+h2{
+    color: #0D0D0D;
+}
+
+
+
+/* ------------------- HEADER ------------------- */
+/*Seleccionando por ID*/
+#encabezado-principal {
+  
+  padding: 15px;
+  text-align: center; /* Centra el texto */
+}
+
+.header-footer{
+    background-color: #2F4673; /* Fondo oscuro */
+    color: white; /* Letra blanca */
+}
+
+/* Nav */
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    padding: 0px 40px 0px 40px;
+    font-size: xx-small;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #949BA6;
+}
+
+
+
+/* ------------------- Seleccionando por CLASE ------------------- */
+/* Estilo para TODOS los elementos con class="seccion-contenido" */
+.seccion-contenido {
+  background-color: white; /* Fondo blanco */
+  border: 1px solid #ccc; /* Borde gris */
+  padding: 20px;
+  border-radius: 20px;
+  border-bottom: #64758C solid 10px;
+  margin: 15px;
+}
+
+
+/* ------------------- FOOTER ------------------- */
+#footer{
+    padding-bottom: 15px;
+}
+
+
+
+/*
+.lgm/-1-hex { color: #2F4673; } Azul
+.lgm/-2-hex { color: #64758C; } Azul Claro
+.lgm/-3-hex { color: #949BA6; } Gris
+.lgm/-4-hex { color: #D9D9D9; } Gris Claro
+.lgm/-5-hex { color: #0D0D0D; } Negro
+
+
+.lgm/-1-rgba { color: rgba(47, 69, 114, 1); }
+.lgm/-2-rgba { color: rgba(99, 117, 140, 1); }
+.lgm/-3-rgba { color: rgba(147, 155, 165, 1); }
+.lgm/-4-rgba { color: rgba(216, 216, 216, 1); }
+.lgm/-5-rgba { color: rgba(12, 12, 12, 1); }
+
+
+.lgm/-1-hsla { color: hsla(219, 41, 31, 1); }
+.lgm/-2-hsla { color: hsla(213, 16, 47, 1); }
+.lgm/-3-hsla { color: hsla(213, 9, 61, 1); }
+.lgm/-4-hsla { color: hsla(0, 0, 85, 1); }
+.lgm/-5-hsla { color: hsla(0, 0, 5, 1); }
+*/
