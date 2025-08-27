@@ -1,0 +1,199 @@
+/* PALETA DE COLORES */
+
+
+/*
+.lgm/-1-hex { color: #2F4673; } Azul
+.lgm/-2-hex { color: #64758C; } Azul Claro
+.lgm/-3-hex { color: #949BA6; } Gris
+.lgm/-4-hex { color: #D9D9D9; } Gris Claro
+.lgm/-5-hex { color: #0D0D0D; } Negro
+*/
+
+/* ------------------- BODY ------------------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0px;
+    background-color: #D9D9D9;
+    font-size: 16px;
+}
+
+h2 {
+    color: #0D0D0D;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+/* ------------------- HEADER ------------------- */
+
+#encabezado-principal {
+
+    padding: 15px;
+    text-align: center;
+}
+
+.header-footer {
+    background-color: #2F4673;
+
+    color: white;
+}
+
+/* Nav */
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0px 40px 0px 40px;
+    font-size: xx-small;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #949BA6;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+    align-items: first baseline;
+}
+
+
+
+/* ------------------- Seleccionando por CLASE ------------------- */
+/* Estilo para TODOS los elementos con class="seccion-contenido" */
+.seccion-contenido {
+    background-color: white;
+    /* Fondo blanco */
+    border: 1px solid #ccc;
+    /* Borde gris */
+    padding: 20px;
+    border-radius: 20px;
+    border-bottom: #64758C solid 10px;
+    margin: 15px auto;
+    /* Centra las secciones horizontalmente */
+    max-width: 900px;
+    /* Ancho máximo para las secciones */
+    box-sizing: border-box;
+    /* Incluye el padding y el border en el ancho */
+}
+
+
+/* ------------------- FOOTER ------------------- */
+#footer {
+    padding-bottom: 15px;
+}
+
+/* ------------------- Boton ------------------- */
+.botton {
+    padding: 10px;
+    margin: 15px auto;
+    max-width: 900px;
+    box-sizing: border-box;
+}
+.botton:hover{
+    background-color: #949BA6
+    color white;
+}
+
+.botton button { 
+    background-color: #2F4673;
+    width: 120px;
+    height: 60px;
+    border-radius: 10px;
+}
+.botton button:hover {
+    background-color: #949BA6
+    color white;
+}
+
+.botton a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+/* ------------------- Tabla ------------------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    /* Importante para que el border-radius de la tabla se aplique correctamente */
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+th {
+    background-color: #64758C;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #64758C;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* ------------------- Imagenes ------------------- */
+.imagenes {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente*/
+    flex-wrap: wrap;
+    /* Permite que las imágenes pasen a la siguiente línea en pantallas pequeñas */
+    max-width: 600px;
+    /* Ajusta el ancho máximo del contenedor */
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
+}
+
+.imagenes img {
+    width: 30%;
+    /* Ajusta el ancho de cada imagen (aproximadamente 30% para 3 imágenes) */
+    margin: 10px;
+    /* Espacio alrededor de cada imagen */
+}
