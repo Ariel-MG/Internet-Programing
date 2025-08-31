@@ -1,0 +1,50 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+
+header { 
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.box{
+    max-width: 900px;
+    background-color: grey;
+    margin: 20px auto;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;  
+    display: flex; 
+}
+
+.align-form{
+    text-align: justify;
+}
+
+
+.form{
+    padding: 20px;
+    justify-content: center;
+}
+.buttom-info{
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 3x;
+}

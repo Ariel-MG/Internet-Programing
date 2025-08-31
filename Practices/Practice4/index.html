@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Evaluación de Calificación</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Practica 4: Evaluación de Calificación</h1>
+    </header>
+    <h2>Ejercicio 1</h2>
+    <div class="box">
+        <div class="form">
+            <form id="calificacionForm">
+                <label for="calificacion">Ingrese su calificación:</label>
+                <input type="number" id="calificacion" name="calificacion" step="0.1" required>
+                <button type="submit">Evaluar</button>
+            </form>
+            <p id="resultadoCalificacion"></p>
+            <script src="calificacion.js"></script>
+        </div>
+    </div>
+    
+    <!-- Numero factorial -->
+     <h2>Ejercicio 2</h2>
+    <div class="box">
+        <div class="form">
+            <form id="factorialForm">
+                <label for="factorial">Ingresa un numero: </label>
+                <input type="number" name="factorial" id="factorial" step="1" required>
+                <button type="submit">Caulcular</button>
+            </form>
+            <p id="resultadoFactorial"></p>
+            <script src="factorial.js"></script>
+        </div>
+    </div>
+
+    <!-- Informacion General -->
+
+    <!--
+    Nombre (text)
+    Correo (email)
+    Edad (number)
+    Género (radio)
+    Fecha de nacimiento (date)
+    Color favorito (color)
+    -->
+    <h2>Ejercicio 3</h2>
+    <div class="box">
+        <div class="form">
+            <form id="info">
+                <div class="align-form" id="info-general">
+                    <label for="name">Nombre: </label><br>
+                    <input type="text" name="name" id="name">
+                    <br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email">
+                    <br>
+                    <label for="edad">Edad:</label><br>
+                    <input type="number" name="edad" id="edad">
+                    <br>
+                    <label for="nacimiento">Fecha de nacimiento: </label><br>
+                    <input type="date" name="nacimiento" id="nacimiento">
+                    <br>
+                    <label for="color">Color favorito</label><br>
+                    <input type="color" name="color" id="color">
+
+
+                </div>
+
+                <div class="align-form">
+                    <h3>Genero</h3>
+                    <input type="radio" name="genero" id="masculino" value="masculino">
+                    <label for="masculino">Masculino</label><br>
+                    <input type="radio" name="genero" id="femenino" value="femenino">
+                    <label for="femenino">Femenino</label><br>
+                    <input type="radio" name="genero" id="otro" value="otro">
+                    <label for="otro">Otro</label><br><br>
+                </div>
+
+                <div  id="button-info">
+                     <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+        
+
+    </div>
+
+    <div class="box">
+        <p id="resultadoInfo"></p>
+        <script src="info.js"></script>
+    </div>
+
+</body>
+
+</html>
