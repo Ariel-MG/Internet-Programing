@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación de Tabla con JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Registro de Datos</h1>
+
+    <form id="dataForm">
+        <fieldset>
+            <legend>Nombre:</legend>
+            <input type="text" id="texto" name="texto">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Correo Electronico:</legend>
+            <input type="email" id="email" name="email">
+        </fieldset>
+
+        <fieldset>
+            <legend>Selecciona tus hobbies:</legend>
+            <input type="checkbox" id="hobby1" name="hobbies" value="Leer">
+            <label for="hobby1">Leer</label><br>
+            <input type="checkbox" id="hobby2" name="hobbies" value="Deporte">
+            <label for="hobby2">Deporte</label><br>
+            <input type="checkbox" id="hobby3" name="hobbies" value="Música">
+            <label for="hobby3">Música</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Estado Civil:</legend>
+            <input type="radio" id="soltero" name="estadoCivil" value="Soltero/a">
+            <label for="soltero">Soltero/a</label><br>
+            <input type="radio" id="casado" name="estadoCivil" value="Casado/a">
+            <label for="casado">Casado/a</label><br>
+            <input type="radio" id="otro" name="estadoCivil" value="Otro">
+            <label for="otro">Otro</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Fecha de Nacimiento:</legend>
+            <input type="date" id="fecha" name="fecha">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Color Favorito:</legend>
+            <input type="color" id="color" name="color" value="#e66465">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Nivel de Satisfacción (1-10):</legend>
+            <input type="range" id="rango" name="rango" min="1" max="10">
+        </fieldset>
+        
+        <button type="button" id="agregarBtn">Agregar a la Tabla</button>
+    </form>
+
+    <hr>
+
+    <h2>Datos Registrados</h2>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Hobbies</th>
+                <th>Estado Civil</th>
+                <th>Fecha y Hora</th>
+                <th>Color Favorito</th>
+                <th>Satisfacción</th>
+            </tr>
+        </thead>
+        <tbody>
+            </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

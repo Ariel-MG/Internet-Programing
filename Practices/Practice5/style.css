@@ -1,0 +1,99 @@
+/*
+.lgm/-1-hex { color: #2F4673; } Azul
+.lgm/-2-hex { color: #64758C; } Azul Claro
+.lgm/-3-hex { color: #949BA6; } Gris
+.lgm/-4-hex { color: #D9D9D9; } Gris Claro
+.lgm/-5-hex { color: #0D0D0D; } Negro
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    
+}
+
+h1,h2 {
+  text-align: center;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+label, legend {
+    /*display: block;*/
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="datetime-local"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Importante para que el padding no afecte el ancho total */
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f4f4f9;
+}
+
+button {
+    background-color: #2F4673;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #64758C;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+thead {
+    background-color: #2F4673;
+    color: white;
+}
+
+/* Estilo para filas pares */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Efecto hover sobre las filas de la tabla */
+tbody tr:hover {
+    background-color: #cce5ff;
+    cursor: pointer;
+}
