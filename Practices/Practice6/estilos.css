@@ -1,0 +1,57 @@
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor principal para centrar todo el contenido */
+.container {
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0 auto;   /* Centra el contenedor horizontalmente */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el encabezado principal */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1a2a4e;
+}
+
+/* Estilo para cada bloque de elemento multimedia */
+.media-element {
+    text-align: center; /* Centra el contenido dentro de cada bloque */
+    margin-bottom: 40px; /* Espacio entre cada elemento */
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd; /* Línea divisoria */
+}
+
+.media-element blockquote {
+    margin: 0 auto; /* Centra el blockquote horizontalmente */
+}
+
+/* Estilo para los títulos de cada sección */
+.media-element h2 {
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+/* Estilo para los párrafos descriptivos */
+.media-element p {
+    font-size: 0.9em;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 15px auto; /* Centra y añade espacio inferior */
+}
+
+/* Asegura que los iframes y videos sean responsivos y no se desborden */
+iframe, video {
+    max-width: 100%;
+    border-radius: 8px; /* Bordes redondeados para los videos y mapas */
+}

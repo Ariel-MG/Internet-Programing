@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Áreas Geométricas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="main">
+        <h1>Calculadora de Áreas</h1>
+        <form id="areaForm">
+            <div class="form-group">
+                <label for="figura">Selecciona una figura:</label>
+                <select id="figura" name="figura">
+                    <option value=""> Elige una opción </option>
+                    <option value="cuadrado">Cuadrado</option>
+                    <option value="triangulo">Triángulo</option>
+                    <option value="rectangulo">Rectángulo</option>
+                </select>
+            </div>
+
+            <div id="inputCuadrado" class="input-group hidden">
+                <div class="form-group">
+                    <label for="lado">Lado (cm):</label>
+                    <input type="number" id="lado" placeholder="Ingresa la medida del lado">
+                </div>
+            </div>
+
+            <div id="inputTriangulo" class="input-group hidden">
+                <div class="form-group">
+                    <label for="baseTriangulo">Base (cm):</label>
+                    <input type="number" id="baseTriangulo" placeholder="Ingresa la medida de la base">
+                </div>
+                <div class="form-group">
+                    <label for="alturaTriangulo">Altura (cm):</label>
+                    <input type="number" id="alturaTriangulo" placeholder="Ingresa la medida de la altura">
+                </div>
+            </div>
+
+            <div id="inputRectangulo" class="input-group hidden">
+                <div class="form-group">
+                    <label for="baseRectangulo">Base (cm):</label>
+                    <input type="number" id="baseRectangulo" placeholder="Ingresa la medida de la base">
+                </div>
+                <div class="form-group">
+                    <label for="alturaRectangulo">Altura (cm):</label>
+                    <input type="number" id="alturaRectangulo" placeholder="Ingresa la medida de la altura">
+                </div>
+            </div>
+
+            <button type="button" id="calcularBtn">Calcular Área</button>
+        </form>
+
+        <div id="resultado" class="resultado-container">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

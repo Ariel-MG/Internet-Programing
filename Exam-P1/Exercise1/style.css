@@ -1,0 +1,59 @@
+/*
+.lgm/-1-hex { color: #2F4673; } Azul
+.lgm/-2-hex { color: #64758C; } Azul Claro
+.lgm/-3-hex { color: #949BA6; } Gris
+.lgm/-4-hex { color: #D9D9D9; } Gris Claro
+.lgm/-5-hex { color: #0D0D0D; } Negro
+*/
+
+body {
+    background-color: #D9D9D9; 
+    font-family: 'Arial', sans-serif;
+    color: #0D0D0D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #949BA6;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: white;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 2px solid #D9D9D9;
+    border-radius: 5px;
+    width: 80px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2F4673;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #2F4673;
+}
+
+p {
+    font-size: 1.1em;
+    margin-top: 15px;
+}
