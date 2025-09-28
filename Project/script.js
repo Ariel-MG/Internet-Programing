@@ -1,3 +1,19 @@
+import { GoogleGenerativeAI } from "@google/generative-ai";
+// Importa y configura dotenv (solo para desarrollo local)
+import * as dotenv from 'dotenv'
+dotenv.config()
+
+// API Key
+let apiKey = process.env.API_KEY; // Intenta obtener la API key de la variable de entorno
+
+if (!apiKey) {
+    console.warn('API Key no encontrada en las variables de entorno.  Asumiendo que Canvas la proveerá.');
+    apiKey = ""; // Deja la API key vacía para que Canvas la proporcione
+}
+
+const genAI = new GoogleGenerativeAI({ apiKey: apiKey });
+const model = genAI.getModel({ model: "gemini-2.0-flash" });
+
 const chatMessages = document.getElementById('chatMessages');
 const chatInput = document.getElementById('chatInput');
 const sendButton = document.getElementById('sendButton');
@@ -43,7 +59,7 @@ async function handleSendMessage() {
         };
 
         // IMPORTANTE: Deja apiKey vacío para que Canvas lo proporcione en tiempo de ejecución.
-        const apiKey = "";
+        // const apiKey = "";
         const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
         const response = await fetch(apiUrl, {
