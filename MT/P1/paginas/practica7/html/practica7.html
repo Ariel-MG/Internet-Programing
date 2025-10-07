@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 7 - Aplicaciones Web con PHP</title>
+    <link rel="stylesheet" href="../../../estilos.css">
+    <link rel="icon" type="image/png" href="../../../assets/faviconB.png">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="../../../assets/faviconB.png" alt="Logo AMG">
+            </div>
+            <div class="nav-links">
+                <a href="../../../index.html">Prácticas</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>> Práctica 7 - Aplicaciones Web con PHP</h1>
+
+        <div class="seccion-contenido">
+            <h2>Aplicación Dockerizada con PHP y MySQL</h2>
+            <p class="parrafo">
+                Esta práctica implementa una aplicación web utilizando PHP y MySQL ejecutándose en contenedores Docker.
+                La aplicación incluye dos calculadoras matemáticas que demuestran el uso de algoritmos para aproximar constantes matemáticas importantes.
+            </p>
+            
+            <div class="info-container">
+                <div class="info-card">
+                    <h3>Tecnologías Utilizadas</h3>
+                    <ul>
+                        <li><strong>Docker & Docker Compose:</strong> Containerización de la aplicación</li>
+                        <li><strong>PHP:</strong> Lenguaje de programación del backend</li>
+                        <li><strong>MySQL:</strong> Base de datos relacional</li>
+                        <li><strong>Apache:</strong> Servidor web</li>
+                        <li><strong>HTML/CSS:</strong> Frontend y estilos</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Arquitectura del Proyecto</h3>
+                    <ul>
+                        <li><strong>docker-compose.yml:</strong> Configuración de servicios</li>
+                        <li><strong>html/:</strong> Código fuente PHP</li>
+                        <li><strong>mysql_data/:</strong> Persistencia de datos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion-contenido">
+            <h2>Calculadoras Disponibles</h2>
+            
+            <div class="calculators-grid">
+                <div class="calculator-card">
+                    <div class="calculator-icon">π</div>
+                    <h3>Aproximación de Pi (π)</h3>
+                    <p class="parrafo">
+                        Utiliza la serie de Leibniz para calcular aproximaciones del número π (pi) mediante iteraciones.
+                        Cuantas más iteraciones, mayor precisión en el cálculo.
+                    </p>
+                    <div class="calculator-info">
+                        <strong>Fórmula:</strong> π = 4 × Σ((-1)ⁿ/(2n+1))
+                    </div>
+                    <a href="pi.php" class="btn-primary" target="_blank">
+                        Calcular π
+                    </a>
+                </div>
+                
+                <div class="calculator-card">
+                    <div class="calculator-icon">e</div>
+                    <h3>Aproximación de e (Euler)</h3>
+                    <p class="parrafo">
+                        Calcula aproximaciones del número e (base de los logaritmos naturales) usando la serie de Taylor.
+                        Mayor número de iteraciones proporciona mayor precisión.
+                    </p>
+                    <div class="calculator-info">
+                        <strong>Fórmula:</strong> e = Σ(1/n!)
+                    </div>
+                    <a href="e.php" class="btn-primary" target="_blank">
+                        Calcular e
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion-contenido">
+            <h2>Instrucciones de Uso</h2>
+            
+            <div class="instructions-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Iniciar los Servicios</h4>
+                        <p>Ejecuta <code>docker-compose up -d</code> en el directorio de la práctica para levantar los contenedores.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Acceder a las Aplicaciones</h4>
+                        <p>Haz clic en los botones de las calculadoras para acceder a las aplicaciones PHP en el navegador.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Realizar Cálculos</h4>
+                        <p>Introduce el número de iteraciones deseado y observa cómo se aproxima a los valores reales de π y e.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-info">
+                <p><strong>ID:</strong> 00379435</p>
+                <p>Ariel Martínez González</p>
+                <p>Universidad Anahuac México Norte</p>
+                <p>Facultad de Ingeniería</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
