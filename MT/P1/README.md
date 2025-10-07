@@ -5,13 +5,12 @@
 **Universidad:** Anahuac México Norte  
 **Facultad:** Ingeniería  
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 MT/P1/
 ├── index.html              # Página principal
 ├── estilos.css            # Hoja de estilos unificada
-├── .htaccess              # Configuración del servidor web
 ├── README.md              # Este archivo
 ├── estilos-backup.css     # Respaldo del CSS original
 ├── assets/                # Recursos multimedia
@@ -21,7 +20,7 @@ MT/P1/
 │   ├── LogoAMG.webp
 │   └── LogoBlanco.png
 └── paginas/               # Páginas de prácticas
-    ├── P2/                # Conversor de Unidades
+    ├── P2/                # Parte dos del Proyecto de MT
     │   ├── P2.html
     │   └── converter.js
     ├── practica2/
@@ -52,27 +51,27 @@ MT/P1/
         └── mysql_data/
 ```
 
-## 🚀 Características
+## Características
 
-### ✅ **Estructura Optimizada**
+### **Estructura Optimizada**
 - **Rutas consistentes** en todas las páginas
 - **CSS unificado** con variables CSS y organización modular
 - **Nomenclatura estandarizada** de archivos
 - **Eliminación de duplicados** y archivos innecesarios
 
-### 🎨 **Diseño Responsivo**
+### **Diseño Responsivo**
 - **Breakpoints optimizados** para móviles y tablets
 - **Efectos visuales** con gradientes y animaciones
 - **Consistencia visual** en todas las prácticas
 - **Accesibilidad mejorada** con contrastes y tipografía
 
-### ⚡ **Optimización Web**
+### **Optimización Web**
 - **Archivo .htaccess** configurado para producción
 - **Compresión habilitada** para mejor rendimiento
 - **Cache de archivos estáticos** configurado
 - **Headers de seguridad** implementados
 
-## 📋 Contenido de las Prácticas
+## Contenido de las Prácticas
 
 | Práctica | Descripción | Tecnologías |
 |----------|-------------|-------------|
@@ -84,33 +83,31 @@ MT/P1/
 | **Práctica 7** | Aplicación web con Docker y MySQL | PHP, Docker, MySQL |
 | **Parte 2** | Conversor universal de unidades | HTML, CSS, JavaScript |
 
-## 🔄 Conversor de Unidades (Parte 2)
+## Conversor de Unidades (Parte 2)
 
 ### Funcionalidades:
-- **🌡️ Temperatura:** Celsius, Fahrenheit, Kelvin, Rankine
-- **📏 Distancia:** Metros, Kilómetros, Millas, Pies, Pulgadas
-- **⏰ Tiempo:** Segundos, Minutos, Horas, Días, Semanas, Meses, Años
-- **💰 Moneda:** USD, EUR, MXN, GBP, JPY, CAD
+- ** Temperatura:** Celsius, Fahrenheit, Kelvin, Rankine
+- ** Distancia:** Metros, Kilómetros, Millas, Pies, Pulgadas
+- ** Tiempo:** Segundos, Minutos, Horas, Días, Semanas, Meses, Años
+- ** Moneda:** USD, EUR, MXN, GBP, JPY, CAD
 
 ### Características técnicas:
-- ✅ Conversión en tiempo real
-- ✅ Interfaz intuitiva con selector de categorías
-- ✅ Validación de entrada y manejo de errores
-- ✅ Botón de intercambio de unidades
-- ✅ Diseño responsivo
+-  Conversión en tiempo real
+-  Interfaz intuitiva con selector de categorías
+-  Validación de entrada y manejo de errores
+-  Botón de intercambio de unidades
+-  Diseño responsivo
 
-## 🌐 Despliegue en public_html
+##  Despliegue en public_html
 
 ### Requisitos del servidor:
 - **Apache** con mod_rewrite habilitado
 - **PHP** 7.4+ (para Práctica 7)
-- **Soporte** para .htaccess
 
 ### Pasos de instalación:
 1. Subir toda la carpeta `P1/` al directorio `public_html/`
 2. Verificar permisos de archivos (644 para archivos, 755 para directorios)
-3. Comprobar que `.htaccess` esté presente y activo
-4. Acceder via navegador a `http://tudominio.com/`
+4. Acceder via navegador a `[http://lab.anahuac.mx/a00379435](https://lab.anahuac.mx/~a00379435/index.html)`
 
 ### URLs de acceso:
 - **Página principal:** `/`
@@ -122,43 +119,38 @@ MT/P1/
 - **Práctica 7:** `/paginas/practica7/practica7.html`
 - **Conversor P2:** `/paginas/P2/P2.html`
 
-## 🔧 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
-- **Frontend:** HTML5, CSS3, JavaScript ES6+
+- **Frontend:** HTML5, CSS3, JavaScript
 - **Backend:** PHP (Práctica 7)
 - **Base de datos:** MySQL (Práctica 7)
 - **Containerización:** Docker (Práctica 7)
 - **Multimedia:** Audio/Video HTML5
 - **Responsive Design:** CSS Grid, Flexbox, Media Queries
 
-## 📱 Compatibilidad
+## Compatibilidad
 
-- ✅ **Chrome** 90+
-- ✅ **Firefox** 88+
-- ✅ **Safari** 14+
-- ✅ **Edge** 90+
-- ✅ **Móviles** iOS/Android
+-  **Chrome** 90+
+-  **Firefox** 88+
+-  **Safari** 14+
+-  **Edge** 90+
+-  **Móviles** iOS/Android
 
-## 🎯 Características de Calidad
+##  Características de Calidad
 
-### 🏗️ **Estructura:**
+###  **Estructura:**
 - Organización lógica de archivos y carpetas
 - Nomenclatura consistente
 - Separación de responsabilidades
 
-### 🎨 **Diseño:**
+### **Diseño:**
 - Interfaz moderna y atractiva
 - Colores y tipografía consistentes
 - Animaciones y efectos visuales
 
-### ⚡ **Rendimiento:**
-- CSS optimizado y minificado conceptualmente
-- Imágenes en formatos web modernos (WebP)
-- Carga asíncrona de recursos
 
-### 🔒 **Seguridad:**
+### **Seguridad:**
 - Headers de seguridad configurados
-- Protección contra acceso a archivos sensibles
 - Validación de entrada en formularios
 
 ---
