@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 4 - Evaluación de Calificación</title>
+    <link rel="stylesheet" href="../../estilos.css">
+    <link rel="icon" type="image/png" href="../../assets/faviconB.png">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="../../assets/faviconB.png" alt="Logo AMG">
+            </div>
+            <div class="nav-links">
+                <a href="../../index.html">Prácticas</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>> Práctica 4 - Evaluación de Calificación</h1>
+        
+        <!-- Ejercicio 1: Calificación -->
+        <div class="seccion-contenido">
+            <h2>Ejercicio 1: Evaluador de Calificaciones</h2>
+            <div class="form-container">
+                <form id="calificacionForm">
+                    <div class="input-group">
+                        <label for="calificacion">Ingrese su calificación (0-100):</label>
+                        <input type="number" id="calificacion" name="calificacion" step="0.1" min="0" max="100" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Evaluar Calificación</button>
+                </form>
+                <div id="resultadoCalificacion" class="resultado"></div>
+            </div>
+        </div>
+        
+        <!-- Ejercicio 2: Factorial -->
+        <div class="seccion-contenido">
+            <h2>Ejercicio 2: Calculadora de Factorial</h2>
+            <div class="form-container">
+                <form id="factorialForm">
+                    <div class="input-group">
+                        <label for="factorial">Ingresa un número entero positivo:</label>
+                        <input type="number" name="factorial" id="factorial" step="1" min="0" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Calcular Factorial</button>
+                </form>
+                <div id="resultadoFactorial" class="resultado"></div>
+            </div>
+        </div>
+
+        <!-- Ejercicio 3: Información General -->
+        <div class="seccion-contenido">
+            <h2>Ejercicio 3: Formulario de Información Personal</h2>
+            <div class="form-container">
+                <form id="info">
+                    <div class="form-grid">
+                        <div class="form-column">
+                            <div class="input-group">
+                                <label for="name">Nombre completo:</label>
+                                <input type="text" name="name" id="name" required>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="email">Correo electrónico:</label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="edad">Edad:</label>
+                                <input type="number" name="edad" id="edad" min="1" max="120" required>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="nacimiento">Fecha de nacimiento:</label>
+                                <input type="date" name="nacimiento" id="nacimiento" required>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="color">Color favorito:</label>
+                                <input type="color" name="color" id="color" value="#667eea">
+                            </div>
+                        </div>
+
+                        <div class="form-column">
+                            <div class="input-group">
+                                <label class="form-title">Género:</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="genero" id="masculino" value="masculino" required>
+                                        <span>Masculino</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="genero" id="femenino" value="femenino" required>
+                                        <span>Femenino</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="genero" id="otro" value="otro" required>
+                                        <span>Otro</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Enviar Información</button>
+                    </div>
+                </form>
+                
+                <div id="resultadoInfo" class="resultado"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-info">
+                <p><strong>ID:</strong> 00379435</p>
+                <p>Ariel Martínez González</p>
+                <p>Universidad Anahuac México Norte</p>
+                <p>Facultad de Ingeniería</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="calificacion.js"></script>
+    <script src="factorial.js"></script>
+    <script src="info.js"></script>
+</body>
+
+</html>

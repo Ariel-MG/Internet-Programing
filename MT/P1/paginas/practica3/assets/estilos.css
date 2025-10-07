@@ -1,0 +1,264 @@
+/* PALETA DE COLORES */
+
+
+/*
+.lgm/-1-hex { color: #2F4673; } Azul
+.lgm/-2-hex { color: #64758C; } Azul Claro
+.lgm/-3-hex { color: #949BA6; } Gris
+.lgm/-4-hex { color: #D9D9D9; } Gris Claro
+.lgm/-5-hex { color: #0D0D0D; } Negro
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    background: #18111F;
+    color: white;
+}
+
+header {
+    /*background: linear-gradient(135deg, #667eea 0%, #5B4495 100%);*/
+    background: #18111F;
+    box-shadow: 0 2px 10px rgba(179, 179, 179, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+footer {
+    /*background: linear-gradient(135deg, #667eea 0%, #5B4495 100%);*/
+    background: #18111F;
+    box-shadow: 0 -2px 10px rgba(179, 179, 179, 0.1);
+    margin-top: auto;
+}
+
+
+/* ------------------- HEADER ------------------- */
+
+#encabezado-principal {
+
+    padding: 15px;
+    text-align: center;
+}
+
+.header-footer {
+    background-color: #2F4673;
+
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-container img:hover {
+    transform: scale(1.05);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-links a:hover::after {
+    width: 80%;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 1rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .nav-links a {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+    align-items: first baseline;
+}
+
+
+
+/* ------------------- Seleccionando por CLASE ------------------- */
+/* Estilo para TODOS los elementos con class="seccion-contenido" */
+.seccion-contenido {
+    background-color: white;
+    /* Fondo blanco */
+    border: 1px solid #ccc;
+    /* Borde gris */
+    padding: 20px;
+    border-radius: 20px;
+    border-bottom: #64758C solid 10px;
+    margin: 15px auto;
+    /* Centra las secciones horizontalmente */
+    max-width: 900px;
+    /* Ancho máximo para las secciones */
+    box-sizing: border-box;
+    /* Incluye el padding y el border en el ancho */
+}
+
+
+/* ------------------- FOOTER ------------------- */
+#footer {
+    padding-bottom: 15px;
+}
+
+/* ------------------- Boton ------------------- */
+.botton {
+    padding: 10px;
+    margin: 15px auto;
+    max-width: 900px;
+    box-sizing: border-box;
+}
+.botton:hover{
+    background-color: #949BA6
+    color white;
+}
+
+.botton button { 
+    background-color: #2F4673;
+    width: 120px;
+    height: 60px;
+    border-radius: 10px;
+}
+.botton button:hover {
+    background-color: #949BA6
+    color white;
+}
+
+.botton a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+/* ------------------- Tabla ------------------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    /* Importante para que el border-radius de la tabla se aplique correctamente */
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+th {
+    background-color: #64758C;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #64758C;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* ------------------- Imagenes ------------------- */
+.imagenes {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente*/
+    flex-wrap: wrap;
+    /* Permite que las imágenes pasen a la siguiente línea en pantallas pequeñas */
+    max-width: 600px;
+    /* Ajusta el ancho máximo del contenedor */
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
+}
+
+.imagenes img {
+    width: 30%;
+    /* Ajusta el ancho de cada imagen (aproximadamente 30% para 3 imágenes) */
+    margin: 10px;
+    /* Espacio alrededor de cada imagen */
+}

@@ -9,26 +9,34 @@
 .lgm/-5-hex { color: #0D0D0D; } Negro
 */
 
-/* ------------------- BODY ------------------- */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
-    padding: 0px;
-    background-color: #D9D9D9;
-    font-size: 16px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h2 {
-    color: #0D0D0D;
-    font-size: 2em;
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    background: #18111F;
+    color: white;
 }
 
-p {
-    font-size: 1.1em;
-    max-width: 800px;
-    margin: 0 auto;
+header {
+    /*background: linear-gradient(135deg, #667eea 0%, #5B4495 100%);*/
+    background: #18111F;
+    box-shadow: 0 2px 10px rgba(179, 179, 179, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
+footer {
+    /*background: linear-gradient(135deg, #667eea 0%, #5B4495 100%);*/
+    background: #18111F;
+    box-shadow: 0 -2px 10px rgba(179, 179, 179, 0.1);
+    margin-top: auto;
+}
 
 
 /* ------------------- HEADER ------------------- */
@@ -45,26 +53,83 @@ p {
     color: white;
 }
 
-/* Nav */
-nav ul {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-container img:hover {
+    transform: scale(1.05);
+}
+
+.nav-links {
+    display: flex;
     list-style: none;
+    gap: 2rem;
 }
 
-nav li {
-    display: inline-block;
-    padding: 0px 40px 0px 40px;
-    font-size: xx-small;
-}
-
-nav a {
-    text-decoration: none;
+.nav-links a {
     color: white;
-    font-weight: bold;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
-nav a:hover {
-    color: #949BA6;
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
 }
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-links a:hover::after {
+    width: 80%;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 1rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .nav-links a {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
 
 
 img {

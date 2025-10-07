@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 5 - Manipulación de Tabla con JS</title>
+    <link rel="stylesheet" href="../../estilos.css">
+    <link rel="icon" type="image/png" href="../../assets/faviconB.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="../../assets/faviconB.png" alt="Logo AMG">
+            </div>
+            <div class="nav-links">
+                <a href="../../index.html">Prácticas</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>> Práctica 5 - Manipulación de Tabla con JS</h1>
+
+        <div class="seccion-contenido">
+            <h2>Registro de Datos</h2>
+            
+            <form id="dataForm" class="form-container">
+                <div class="form-grid">
+                    <div class="form-column">
+                        <div class="input-group">
+                            <label for="texto">Nombre completo:</label>
+                            <input type="text" id="texto" name="texto" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="fecha">Fecha de nacimiento:</label>
+                            <input type="date" id="fecha" name="fecha" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="color">Color favorito:</label>
+                            <input type="color" id="color" name="color" value="#667eea">
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="rango">Nivel de satisfacción (1-10): <span id="rangeValue">5</span></label>
+                            <input type="range" id="rango" name="rango" min="1" max="10" value="5">
+                        </div>
+                    </div>
+
+                    <div class="form-column">
+                        <div class="input-group">
+                            <label class="form-title">Selecciona tus hobbies:</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="hobby1" name="hobbies" value="Leer">
+                                    <span>Leer</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="hobby2" name="hobbies" value="Deporte">
+                                    <span>Deporte</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="hobby3" name="hobbies" value="Música">
+                                    <span>Música</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="hobby4" name="hobbies" value="Viajar">
+                                    <span>Viajar</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="hobby5" name="hobbies" value="Tecnología">
+                                    <span>Tecnología</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="form-title">Estado civil:</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" id="soltero" name="estadoCivil" value="Soltero/a" required>
+                                    <span>Soltero/a</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" id="casado" name="estadoCivil" value="Casado/a" required>
+                                    <span>Casado/a</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" id="otro" name="estadoCivil" value="Otro" required>
+                                    <span>Otro</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" id="agregarBtn" class="btn-primary">Agregar a la Tabla</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="seccion-contenido">
+            <h2>Datos Registrados</h2>
+            <div class="table-container">
+                <table id="dataTable">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                            <th>Hobbies</th>
+                            <th>Estado Civil</th>
+                            <th>Fecha y Hora</th>
+                            <th>Color Favorito</th>
+                            <th>Satisfacción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-info">
+                <p><strong>ID:</strong> 00379435</p>
+                <p>Ariel Martínez González</p>
+                <p>Universidad Anahuac México Norte</p>
+                <p>Facultad de Ingeniería</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
