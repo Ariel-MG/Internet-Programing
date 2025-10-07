@@ -55,21 +55,12 @@ MT/P1/
 
 ### **Estructura Optimizada**
 - **Rutas consistentes** en todas las páginas
-- **CSS unificado** con variables CSS y organización modular
 - **Nomenclatura estandarizada** de archivos
-- **Eliminación de duplicados** y archivos innecesarios
 
 ### **Diseño Responsivo**
-- **Breakpoints optimizados** para móviles y tablets
 - **Efectos visuales** con gradientes y animaciones
-- **Consistencia visual** en todas las prácticas
-- **Accesibilidad mejorada** con contrastes y tipografía
+- **Consistencia visual** en todas las prácticas (Practica 2 no lo requiere)
 
-### **Optimización Web**
-- **Archivo .htaccess** configurado para producción
-- **Compresión habilitada** para mejor rendimiento
-- **Cache de archivos estáticos** configurado
-- **Headers de seguridad** implementados
 
 ## Contenido de las Prácticas
 
