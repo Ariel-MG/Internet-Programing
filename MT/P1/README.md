@@ -77,10 +77,10 @@ MT/P1/
 ## Conversor de Unidades (Parte 2)
 
 ### Funcionalidades:
-- ** Temperatura:** Celsius, Fahrenheit, Kelvin, Rankine
-- ** Distancia:** Metros, Kilómetros, Millas, Pies, Pulgadas
-- ** Tiempo:** Segundos, Minutos, Horas, Días, Semanas, Meses, Años
-- ** Moneda:** USD, EUR, MXN, GBP, JPY, CAD
+- **Temperatura:** Celsius, Fahrenheit, Kelvin, Rankine
+- **Distancia:** Metros, Kilómetros, Millas, Pies, Pulgadas
+- **Tiempo:** Segundos, Minutos, Horas, Días, Semanas, Meses, Años
+- **Moneda:** USD, EUR, MXN, GBP, JPY, CAD
 
 ### Características técnicas:
 -  Conversión en tiempo real
