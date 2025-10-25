@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    background: #18111F;
+    color: white;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+header {
+    background: #18111F;
+    box-shadow: 0 2px 10px rgba(179, 179, 179, 0.1);
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(180deg, #c9cee2, #9778e4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.seccion-contenido {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 20px;
+    border-bottom: #64758C solid 10px;
+    margin: 15px auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.seccion-contenido h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Estilos para tablas */
+.seccion-contenido table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.seccion-contenido table thead {
+    background: linear-gradient(135deg, #667eea, #5B4495);
+    color: white;
+}
+
+.seccion-contenido table th {
+    padding: 1rem 0.8rem;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.85rem;
+}
+
+.seccion-contenido table td {
+    padding: 1rem 0.8rem;
+    border-bottom: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+/* Filas alternadas */
+.seccion-contenido table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.seccion-contenido table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Efecto hover en las filas */
+.seccion-contenido table tbody tr:hover {
+    background-color: #e3f2fd !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.seccion-contenido table tbody tr:hover td {
+    color: #1976d2;
+    font-weight: 500;
+}
+
+/* Container para tablas */
+.table-container {
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+.table-container table {
+    margin: 0;
+}
+
+/* Responsividad para la tabla */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    
+    .navbar h1 {
+        font-size: 2rem;
+    }
+    
+    .seccion-contenido table {
+        font-size: 0.8rem;
+    }
+    
+    .seccion-contenido table th,
+    .seccion-contenido table td {
+        padding: 0.6rem 0.5rem;
+    }
+    
+    .seccion-contenido table th {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0.5rem;
+    }
+    
+    .navbar h1 {
+        font-size: 1.5rem;
+    }
+    
+    .seccion-contenido table {
+        font-size: 0.75rem;
+    }
+    
+    .seccion-contenido table th,
+    .seccion-contenido table td {
+        padding: 0.5rem 0.3rem;
+    }
+    
+    /* Hacer la tabla horizontal scrollable en móviles */
+    .seccion-contenido {
+        overflow-x: auto;
+    }
+    
+    .seccion-contenido table {
+        min-width: 500px;
+    }
+}
+
+/* Estilos para mensajes de error o información */
+.info-message {
+    background: linear-gradient(135deg, #e8f5e8, #d4edda);
+    border: 2px solid #28a745;
+    color: #155724;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    text-align: center;
+    font-weight: 500;
+}
+
+.error-message {
+    background: linear-gradient(135deg, #f8e8e8, #f5c6cb);
+    border: 2px solid #dc3545;
+    color: #721c24;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    text-align: center;
+    font-weight: 500;
+}
