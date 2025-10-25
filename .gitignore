@@ -1,0 +1,287 @@
+# ============================================
+# .gitignore para Proyecto Internet Programming
+# Universidad Anahuac México Norte
+# ============================================
+
+# ==========================================
+# ARCHIVOS DEL SISTEMA OPERATIVO
+# ==========================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.nfs*
+
+# ==========================================
+# EDITORES E IDEs
+# ==========================================
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# JetBrains IDEs (WebStorm, PhpStorm, etc.)
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ==========================================
+# BASES DE DATOS Y ARCHIVOS SENSIBLES
+# ==========================================
+
+# MySQL Data Directory (Docker volumes)
+mysql_data/
+**/mysql_data/
+*.sql
+*.dump
+
+# Archivos de configuración con credenciales
+config.php
+database.php
+.env
+.env.local
+.env.*.local
+
+# Certificados y llaves privadas
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.jks
+
+# Archivos de sesión
+sessions/
+tmp/
+temp/
+
+# ==========================================
+# DOCKER Y CONTENEDORES
+# ==========================================
+
+# Logs de Docker
+docker-compose.override.yml
+.docker/
+
+# Volúmenes y datos persistentes
+volumes/
+data/
+
+# ==========================================
+# DEPENDENCIAS Y PAQUETES
+# ==========================================
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+
+# Composer (PHP)
+vendor/
+composer.lock
+
+# ==========================================
+# ARCHIVOS DE CONSTRUCCIÓN Y DISTRIBUCIÓN
+# ==========================================
+
+# Build directories
+build/
+dist/
+out/
+
+# Minified files
+*.min.js
+*.min.css
+
+# Source maps
+*.map
+
+# ==========================================
+# LOGS Y ARCHIVOS TEMPORALES
+# ==========================================
+
+# Logs generales
+*.log
+logs/
+log/
+
+# Archivos temporales
+*.tmp
+*.temp
+*.cache
+*.pid
+*.seed
+*.pid.lock
+
+# PHP
+*.php~
+*.php.bak
+
+# ==========================================
+# RESPALDOS Y ARCHIVOS DE VERSIONES
+# ==========================================
+
+# Respaldos automáticos
+*-backup
+*-backup.*
+*.backup
+*.bak
+*.orig
+
+# Archivos de versiones
+*.v1
+*.v2
+*-old
+*-copy
+
+# ==========================================
+# MULTIMEDIA Y ARCHIVOS GRANDES
+# ==========================================
+
+# Archivos multimedia grandes (opcional - descomenta si es necesario)
+# *.mp4
+# *.avi
+# *.mov
+# *.wmv
+# *.flv
+# *.webm
+
+# Archivos de imagen grandes no procesados
+*.psd
+*.ai
+*.sketch
+*.fig
+
+# ==========================================
+# ARCHIVOS DE DESARROLLO Y TESTING
+# ==========================================
+
+# Coverage reports
+coverage/
+.nyc_output/
+.coverage
+htmlcov/
+
+# Testing
+.pytest_cache/
+.tox/
+
+# ==========================================
+# ESPECÍFICO DEL PROYECTO
+# ==========================================
+
+# Archivos de práctica temporal
+*-test.*
+*-prueba.*
+*-temp.*
+
+# Capturas de pantalla de desarrollo
+screenshots/
+screen-*.png
+
+# Documentos de planificación personal
+notas.txt
+todo.txt
+plan.md
+
+# Archivos de configuración local
+local-config.*
+
+# ==========================================
+# SEGURIDAD
+# ==========================================
+
+# Archivos que pueden contener información sensible
+secrets.txt
+passwords.txt
+credentials.*
+auth.*
+
+# Variables de entorno
+.env*
+!.env.example
+
+# ==========================================
+# PERFORMANCE Y OPTIMIZACIÓN
+# ==========================================
+
+# Caché de aplicaciones
+.cache/
+*.cache
+
+# Archivos de optimización
+.htaccess.bak
+robots.txt.bak
+
+# ==========================================
+# MISCELÁNEOS
+# ==========================================
+
+# Archivos comprimidos temporales
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.tgz
+
+# Archivos de depuración
+debug.log
+error.log
+access.log
+
+# Metadatos
+.metadata
+
+# Carpetas de salida específicas del IDE
+.settings/
+.project
+.classpath
