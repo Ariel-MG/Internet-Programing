@@ -184,9 +184,6 @@ if ($resultado) {
                                         class="libro-imagen rounded shadow-sm"
                                         onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
                                     >
-                                    <div class="bg-light rounded d-flex align-items-center justify-content-center" style="width: 100px; height: 150px; margin: 0 auto; display: none;">
-                                        <i class="bi bi-image text-muted" style="font-size: 2rem;"></i>
-                                    </div>
                                 </div>
                             <?php else: ?>
                                 <div class="text-center p-3">
