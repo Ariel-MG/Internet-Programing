@@ -1,0 +1,20 @@
+# Datos de MySQL (no incluir en git)
+mysql_data/
+
+# Archivos de log
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de IDE
+.vscode/
+.idea/
+
+# Variables de entorno
+.env

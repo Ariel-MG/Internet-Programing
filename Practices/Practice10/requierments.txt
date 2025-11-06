@@ -1,0 +1,24 @@
+Siguie las siguintes indicaciones para el proyecto, te comento lo que ya tengo
+
+- Un Docker levantado basado en el archivo ./docker-compose.yml
+- Un repositorio conectado al proyecto
+
+
+
+
+Para esta práctica deben realizar un mini-sistema que será un preámbulo para su proyecto final del curso.
+
+El sistema consiste en un registro de libros para una librería. El sistema debe tener tres páginas: inicio, registro y consulta.
+
+Inicio. Una página de bienvenida que permita navegar a las otras secciones.
+Registro. Página que contiene un formulario para registrar libros nuevos.
+Consulta. Permite desplegar los libros registrados en la base de datos.
+La información de los libros que se deben almacenar en la base de datos es: id (PK), Autor, Título, Fecha de publicación, Imagen de portada. Se debe crear una base de datos relacional en docker para almacenar los datos. Para la imagen se deberá usar el formato especial BLOB, este es el formato que permite codificar y cargar el archivo de imagen a la base de datos. 
+
+Las tres páginas deberán emplear únicamente Bootstrap 5 para todos sus elementos. 
+
+No olvide agregar navegación entre los archivos, pueden utilizar componentes de paginación de Bootstrap o una barra de navegación superior (les dejo el link a la documentación).
+
+Para el desarrollo del proyecto debe crear un repositorio local git e ir realizando commits conforme vayan teniendo progreso en su desarrollo. También deberán vincular su repositorio local con uno en Github.
+
+Para la entrega será necesario incluir un reporte con pantallazos que muestren el funcionamiento. Además de incluir el código fuente y el volcado de la base de datos en un archivo de texto, todo dentro de un zip. También deberán entregar la URL hacia su repositorio en Guthub.
