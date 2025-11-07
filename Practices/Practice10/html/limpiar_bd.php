@@ -235,7 +235,7 @@ if ($resultado_count) {
     <footer class="bg-light mt-5 py-4">
         <div class="container text-center">
             <p class="text-muted mb-0">
-                &copy; 2024 Sistema de Librería - Administración de Base de Datos
+                &copy; 2025 Sistema de Librería - Administración de Base de Datos
             </p>
         </div>
     </footer>
