@@ -1,0 +1,84 @@
+:root {
+    --color-bg: #F2EBE5;
+    --color-primary: #647295;
+    --color-accent: #9F496E;
+    --color-text: #2B262D;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sticky Footer */
+footer {
+    margin-top: auto;
+    background-color: var(--color-text) !important; /* Override Bootstrap bg-dark */
+}
+
+/* Navbar Overrides */
+.navbar {
+    background-color: var(--color-primary) !important;
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+}
+
+.nav-link:hover {
+    color: var(--color-bg) !important;
+}
+
+/* Button Overrides */
+.btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+    background-color: #505b7a; /* Darker shade of primary */
+    border-color: #505b7a;
+}
+
+.btn-secondary {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.btn-secondary:hover {
+    background-color: #823b5a; /* Darker shade of accent */
+    border-color: #823b5a;
+}
+
+/* Card Overrides */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    background-color: var(--color-primary) !important;
+    color: white;
+}
+
+/* Text Colors */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-text);
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
