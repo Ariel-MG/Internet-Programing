@@ -5,11 +5,12 @@
     --color-text: #2B262D;
 }
 
-html, body {
+html {
     height: 100%;
 }
 
 body {
+    min-height: 100vh;
     background-color: var(--color-bg);
     color: var(--color-text);
     display: flex;
@@ -20,7 +21,8 @@ body {
 /* Sticky Footer */
 footer {
     margin-top: auto;
-    background-color: var(--color-text) !important; /* Override Bootstrap bg-dark */
+    background-color: var(--color-text) !important;
+    /* Override Bootstrap bg-dark */
 }
 
 /* Navbar Overrides */
@@ -28,7 +30,8 @@ footer {
     background-color: var(--color-primary) !important;
 }
 
-.navbar-brand, .nav-link {
+.navbar-brand,
+.nav-link {
     color: #ffffff !important;
 }
 
@@ -43,7 +46,8 @@ footer {
 }
 
 .btn-primary:hover {
-    background-color: #505b7a; /* Darker shade of primary */
+    background-color: #505b7a;
+    /* Darker shade of primary */
     border-color: #505b7a;
 }
 
@@ -53,14 +57,15 @@ footer {
 }
 
 .btn-secondary:hover {
-    background-color: #823b5a; /* Darker shade of accent */
+    background-color: #823b5a;
+    /* Darker shade of accent */
     border-color: #823b5a;
 }
 
 /* Card Overrides */
 .card {
     border: none;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card-header {
@@ -69,7 +74,12 @@ footer {
 }
 
 /* Text Colors */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--color-text);
 }
 
@@ -81,4 +91,173 @@ a {
 a:hover {
     color: var(--color-primary);
     text-decoration: underline;
+}
+
+/* Product Page Styles */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-card .card-img-top {
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.product-price {
+    color: var(--color-accent);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.product-card .btn-success {
+    background-color: var(--color-primary);
+    border: none;
+}
+
+.product-card .btn-success:hover {
+    background-color: var(--color-accent);
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    background-color: transparent;
+    padding: 0.5rem 0;
+}
+
+.breadcrumb-item a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: var(--color-text);
+}
+
+/* Badges */
+.badge {
+    font-weight: 500;
+    padding: 0.5em 0.8em;
+}
+
+/* Sticky Top */
+.sticky-top {
+    position: sticky;
+    z-index: 1020;
+}
+
+/* Cart Page */
+.table-hover tbody tr:hover {
+    background-color: rgba(100, 114, 149, 0.05);
+}
+
+/* Checkout Page */
+.form-check-input:checked {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+/* Success Page */
+.border-success {
+    border-color: #28a745 !important;
+    border-width: 2px !important;
+}
+
+/* Filter Sidebar */
+.list-group-item.active {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.list-group-item-action:hover {
+    background-color: rgba(100, 114, 149, 0.1);
+}
+
+/* Product Detail Page */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-card {
+        margin-bottom: 1rem;
+    }
+
+    .sticky-top {
+        position: relative;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Loading state */
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Alert improvements */
+.alert {
+    border-radius: 8px;
+    border: none;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
 }

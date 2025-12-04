@@ -66,6 +66,17 @@ $tables = [
         fecha_agregado TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario) ON DELETE CASCADE,
         FOREIGN KEY (id_producto) REFERENCES productos(id_producto) ON DELETE CASCADE
+    )",
+    "resenas" => "CREATE TABLE IF NOT EXISTS resenas (
+        id_resena INT AUTO_INCREMENT PRIMARY KEY,
+        id_producto INT,
+        id_usuario INT,
+        calificacion INT NOT NULL CHECK (calificacion BETWEEN 1 AND 5),
+        comentario TEXT NOT NULL,
+        fecha_resena TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        FOREIGN KEY (id_producto) REFERENCES productos(id_producto) ON DELETE CASCADE,
+        FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario) ON DELETE CASCADE,
+        UNIQUE KEY unique_user_product (id_producto, id_usuario)
     )"
 ];
 
